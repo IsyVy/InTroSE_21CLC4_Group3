@@ -5,9 +5,13 @@
   margin-bottom: 20px;
 }
 
+.store-header h2 {
+  margin-left: 50px;
+}
 .store-search-container {
   display: flex;
   align-items: center;
+  margin-right: 90px; /* Điều chỉnh khoảng cách phải của phần tìm kiếm */
 }
 
 input {
@@ -62,6 +66,7 @@ h2 {
 
 .product-card img {
   max-width: 100%;
+  max-height: 100px; /* Đặt kích thước tối đa theo chiều cao */
   height: auto;
 }
 
@@ -96,11 +101,14 @@ h2 {
 }
 /* -------------------------------------------------------------------- */
 .button-container {
+  width: 50px; /* Đặt kích thước nút */
+  height: 50px; /* Đặt kích thước nút */
+  margin: 5px; /* Khoảng cách giữa nút Mua và nút trái tim */
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 15px;
+  justify-content: center;
 }
+
 
 button {
   background-color: #f05d4a;

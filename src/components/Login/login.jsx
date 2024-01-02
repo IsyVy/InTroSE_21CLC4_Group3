@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-// import "./Nav.scss";
 import "./login.css";
 import { NavLink } from "react-router-dom";
 import Nav from "../Navigation/Nav";
+import productCart from "../ProductList/productList";
 
 const Login = (props) => {
   const [rememberMe, setRememberMe] = useState(false);
@@ -23,19 +23,7 @@ const Login = (props) => {
   };
 
   const products = [
-    {
-      id: 1,
-      image: "url_to_image_1", // Thay thế bằng URL hình ảnh của sản phẩm 1
-      name: "Product 1",
-      description: "Description of Product 1",
-    },
-    {
-      id: 2,
-      image: "url_to_image_2", // Thay thế bằng URL hình ảnh của sản phẩm 2
-      name: "Product 2",
-      description: "Description of Product 2",
-    },
-    // Thêm nhiều sản phẩm khác nếu cần
+    ...productCart,
   ];
 
   const [currentProductIndex, setCurrentProductIndex] = useState(0);
@@ -94,16 +82,16 @@ const Login = (props) => {
         </div>
         {/* --------------------------------------------------------- */}
         <div className="product-section">
-          <h2>Featured Products</h2>
+          <h2>On Sale</h2>
           <div className="product-display">
             <div className="product-image">
               <img
-                src={products[currentProductIndex].image}
-                alt={products[currentProductIndex].name}
+                src={products[currentProductIndex].thumb}
+                alt={products[currentProductIndex].product_name}
               />
             </div>
             <div className="product-info">
-              <h3>{products[currentProductIndex].name}</h3>
+              <h3>{products[currentProductIndex].product_name}</h3>
               <p>{products[currentProductIndex].description}</p>
             </div>
           </div>

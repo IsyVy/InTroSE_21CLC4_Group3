@@ -34,24 +34,21 @@ const Nav = (props) => {
             <Link to="/about">
               <div>ABOUT</div>
             </Link>
+            <div style={{ width: "400px" }}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
 
             <Link to="/login">
               {""}
-              <div>
-                <FontAwesomeIcon
-                  icon={faUser}
-                  style={{
-                    fontSize: "21px",
-                    color: "#f05d4a",
-                    marginTop: "5px",
-                    marginLeft: "200px",
-                  }}
-                />
-              </div>
+              <span>
+                <FontAwesomeIcon icon={faUser} className="nav-icons" />
+              </span>
             </Link>
 
             <button className="search-wrapper" onClick={handleExpand}>
-              <SearchOutlined />
+              <SearchOutlined className="nav-icons" />
             </button>
             <input
               className="search-input"
@@ -60,13 +57,7 @@ const Nav = (props) => {
             />
             <Link to="/cart">
               <div>
-                <ShoppingCartOutlined
-                  style={{
-                    fontSize: "23px",
-                    color: "#f05d4a",
-                    marginLeft: "130px",
-                  }}
-                />
+                <ShoppingCartOutlined className="nav-iconsS " />
               </div>
             </Link>
             <Outlet />

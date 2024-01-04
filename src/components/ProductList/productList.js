@@ -7,7 +7,7 @@ import img6 from "../../images/ShoesWeb/Adidas/Yeezy 700 V3 Azael 2023/1254507_0
 const product_cart = [
   {
     id: 1,
-    product_name: "Marvel x Ultra 4D Advanced Spider-Man 2",
+    product_name: "Marvel x Ultra 1D Advanced Spider-Man 2",
     description: "",
     price: 4500000,
     currency: "đ",
@@ -16,7 +16,7 @@ const product_cart = [
   },
   {
     id: 2,
-    product_name: "Marvel x Ultra 4D Advanced Spider-Man 2",
+    product_name: "Marvel x Ultra 2D Advanced Spider-Man 2",
     description: "",
     price: 4500000,
     currency: "đ",
@@ -25,7 +25,7 @@ const product_cart = [
   },
   {
     id: 3,
-    product_name: "Marvel x Ultra 4D Advanced Spider-Man 2",
+    product_name: "Marvel x Ultra 3D Advanced Spider-Man 2",
     description: "",
     price: 4500000,
     currency: "đ",
@@ -44,7 +44,7 @@ const product_cart = [
 
   {
     id: 5,
-    product_name: "Marvel x Ultra 4D Advanced Spider-Man 2",
+    product_name: "Marvel x Ultra 5D Advanced Spider-Man 2",
     description: "",
     price: 4500000,
     currency: "đ",
@@ -53,7 +53,7 @@ const product_cart = [
   },
   {
     id: 6,
-    product_name: "Marvel x Ultra 4D Advanced Spider-Man 2",
+    product_name: "Marvel x Ultra 6D Advanced Spider-Man 2",
     description: "",
     price: 4500000,
     currency: "đ",
@@ -62,7 +62,7 @@ const product_cart = [
   },
   {
     id: 7,
-    product_name: "Marvel x Ultra 4D Advanced Spider-Man 2",
+    product_name: "Marvel x Ultra 7D Advanced Spider-Man 2",
     description: "",
     price: 4500000,
     currency: "đ",
@@ -72,7 +72,7 @@ const product_cart = [
 
   {
     id: 8,
-    product_name: "Marvel x Ultra 4D Advanced Spider-Man 2",
+    product_name: "Marvel x Ultra 8D Advanced Spider-Man 2",
     description: "",
     price: 4500000,
     currency: "đ",
@@ -81,7 +81,7 @@ const product_cart = [
   },
   {
     id: 9,
-    product_name: "Marvel x Ultra 4D Advanced Spider-Man 2",
+    product_name: "Marvel x Ultra 9D Advanced Spider-Man 2",
     description: "",
     price: 4500000,
     currency: "đ",
@@ -90,7 +90,7 @@ const product_cart = [
   },
   {
     id: 10,
-    product_name: "Marvel x Ultra 4D Advanced Spider-Man 2",
+    product_name: "Marvel x Ultra 10D Advanced Spider-Man 2",
     description: "",
     price: 4500000,
     currency: "đ",

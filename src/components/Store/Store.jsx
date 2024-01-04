@@ -3,75 +3,10 @@ import { Link } from "react-router-dom";
 import "./Store.css";
 import StoreNav from "../Navigation/Nav";
 import Footer from "../Footer/footer";
+import productCart from "../ProductList/productList";
 
 const products = [
-  {
-    id: 1,
-    name: "Sản phẩm 1",
-    price: 100,
-    image: "url_to_image_1.jpg",
-  },
-  {
-    id: 2,
-    name: "Sản phẩm 2",
-    price: 150,
-    image: "url_to_image_2.jpg",
-  },
-  {
-    id: 3,
-    name: "Sản phẩm 3",
-    price: 120,
-    image: "url_to_image_3.jpg",
-  },
-  {
-    id: 4,
-    name: "Sản phẩm 4",
-    price: 100,
-    image: "url_to_image_4.jpg",
-  },
-  {
-    id: 5,
-    name: "Sản phẩm 5",
-    price: 100,
-    image: "url_to_image_5.jpg",
-  },
-  {
-    id: 6,
-    name: "Sản phẩm 6",
-    price: 100,
-    image: "url_to_image_6.jpg",
-  },
-  {
-    id: 7,
-    name: "Sản phẩm 7",
-    price: 100,
-    image: "url_to_image_7.jpg",
-  },
-  {
-    id: 8,
-    name: "Sản phẩm 8",
-    price: 100,
-    image: "url_to_image_8.jpg",
-  },
-  {
-    id: 9,
-    name: "Sản phẩm 9",
-    price: 100,
-    image: "url_to_image_9.jpg",
-  },
-  {
-    id: 10,
-    name: "Sản phẩm 10",
-    price: 100,
-    image: "url_to_image_10.jpg",
-  },
-  // {
-  //   id: 11,
-  //   name: "Sản phẩm 11",
-  //   price: 100,
-  //   image: "url_to_image_11.jpg",
-  // },
-  // Thêm các sản phẩm khác tương tự ở đây
+  // ...productCart,
 ];
 
 const itemsPerPage = 6; // Số sản phẩm hiển thị trên mỗi trang
@@ -81,7 +16,7 @@ const Store = () => {
 
   const indexOfLastProduct = currentPage * itemsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - itemsPerPage;
-  const currentProducts = products.slice(
+  const currentProducts = productCart.slice(
     indexOfFirstProduct,
     indexOfLastProduct
   );
@@ -94,19 +29,19 @@ const Store = () => {
       <div className="store-header">
         <h2>Store</h2>
         <div className="store-search-container">
-          <input type="text" placeholder="Tìm kiếm..." />
-          <button type="button">Tìm kiếm</button>
+          <input type="text" placeholder="search..." />
+          <button type="button">search</button>
         </div>
       </div>
       <div className="product-grid">
-        {currentProducts.map((product, index) => (
-          <div key={product.id} className="product-card">
-            <img src={product.image} alt={product.name} />
-            <h3>{product.name}</h3>
-            <p>Giá: ${product.price}</p>
+        {currentProducts.map((productCart, index) => (
+          <div key={productCart.id} className="product-card">
+            <img src={productCart.thumb} alt={productCart.product_name} />
+            <h3>{productCart.product_name}</h3>
+            <p>Price: {productCart.price}{productCart.currency}</p>
             <div className="button-container">
-              <button>Mua</button>
-              <button>Yêu thích</button>
+              <button>Buy</button>
+              <button>🤍</button>
             </div>
           </div>
         ))}
@@ -114,7 +49,7 @@ const Store = () => {
       <div className="pagination-container">
         <div className="pagination">
           {Array.from({
-            length: Math.ceil(products.length / itemsPerPage),
+            length: Math.ceil(productCart.length / itemsPerPage),
           }).map((_, index) => (
             <button key={index} onClick={() => paginate(index + 1)}>
               {index + 1}

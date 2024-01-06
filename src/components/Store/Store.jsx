@@ -9,7 +9,7 @@ const products = [
   // ...productCart,
 ];
 
-const itemsPerPage = 6; // Số sản phẩm hiển thị trên mỗi trang
+const itemsPerPage = 8; // Số sản phẩm hiển thị trên mỗi trang
 
 const Store = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -38,10 +38,13 @@ const Store = () => {
           <div key={productCart.id} className="product-card">
             <img src={productCart.thumb} alt={productCart.product_name} />
             <h3>{productCart.product_name}</h3>
-            <p>Price: {productCart.price}{productCart.currency}</p>
+            <p>
+              Price: {productCart.price}
+              {productCart.currency}
+            </p>
             <div className="button-container">
-              <button>Buy</button>
-              <button>🤍</button>
+              <button className="btnBuy">Buy</button>
+              <button className="wishList">🤍</button>
             </div>
           </div>
         ))}

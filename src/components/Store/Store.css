@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: 30px;
+  margin-right: 150px;
 }
 
 @font-face {
@@ -24,28 +26,32 @@
 }
 
 .store-header h2 {
-  margin-left: 50px;
+  margin-left: 170px;
   font-family: "TT Barrels Trl3";
 }
 .store-search-container {
   display: flex;
   align-items: center;
   margin-right: 90px; /* Điều chỉnh khoảng cách phải của phần tìm kiếm */
+  border-radius: 10%;
+  border-color: #f4f2f2;
 }
 
 input {
   padding: 8px;
   margin-right: 5px;
+  border-width: 1px;
 }
 
 button[type="button"] {
-  background-color: #f05d4a;
+  background-color: #f09184;
   color: #fff;
   padding: 8px 16px;
   border: none;
   cursor: pointer;
   font-size: 14px;
   transition: background-color 0.3s;
+  border-radius: 5%;
 }
 
 button[type="button"]:hover {
@@ -70,15 +76,20 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start; /* Căn đều các cột trên mỗi hàng */
+  margin-left: 150px;
+  margin-right: 100px;
+  margin-top: 50px;
 }
 
 .product-card {
-  width: calc(25% - 20px); /* Chiều rộng của sản phẩm, giảm 20px để có khoảng cách giữa các sản phẩm */
-  margin: 10px;
+  width: calc(
+    25% - 20px
+  ); /* Chiều rộng của sản phẩm, giảm 20px để có khoảng cách giữa các sản phẩm */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;
 }
 
 .product-card img {
@@ -87,9 +98,15 @@ h2 {
   height: auto;
 }
 
+.product-card:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
 .product-card h3 {
   font-size: 12px;
-  margin: 10px 0;
+  margin: 12px 0;
   color: #333;
   text-align: center; /* Căn giữa văn bản */
   font-family: "TT Barrels Trl2";
@@ -103,25 +120,33 @@ h2 {
 
 @media (max-width: 1200px) {
   .product-card {
-    width: calc(33.33% - 20px); /* Hiển thị 3 sản phẩm trên mỗi hàng khi màn hình nhỏ hơn 1200px */
+    width: calc(
+      33.33% - 20px
+    ); /* Hiển thị 3 sản phẩm trên mỗi hàng khi màn hình nhỏ hơn 1200px */
   }
 }
 
 @media (max-width: 992px) {
   .product-card {
-    width: calc(50% - 20px); /* Hiển thị 2 sản phẩm trên mỗi hàng khi màn hình nhỏ hơn 992px */
+    width: calc(
+      50% - 20px
+    ); /* Hiển thị 2 sản phẩm trên mỗi hàng khi màn hình nhỏ hơn 992px */
   }
 }
 
 @media (max-width: 768px) {
   .product-card {
-    width: calc(50% - 20px); /* Hiển thị 2 sản phẩm trên mỗi hàng khi màn hình nhỏ hơn 768px */
+    width: calc(
+      50% - 20px
+    ); /* Hiển thị 2 sản phẩm trên mỗi hàng khi màn hình nhỏ hơn 768px */
   }
 }
 
 @media (max-width: 480px) {
   .product-card {
-    width: calc(100% - 20px); /* Hiển thị 1 sản phẩm trên mỗi hàng khi màn hình nhỏ hơn 480px */
+    width: calc(
+      100% - 20px
+    ); /* Hiển thị 1 sản phẩm trên mỗi hàng khi màn hình nhỏ hơn 480px */
   }
 }
 /* -------------------------------------------------------------------- */
@@ -134,20 +159,40 @@ h2 {
   justify-content: center;
 }
 
-button {
+.btnBuy {
+  display: none;
+}
+
+.wishList {
+  display: none;
+}
+
+.product-card:hover .btnBuy {
+  display: inline;
   background-color: #f05d4a;
   color: #fff;
-  padding: 8px 16px;
-  border: none;
+  padding: 9px 9px;
+  border: #f05d4a;
   cursor: pointer;
   font-size: 10px;
   margin: 0 5px;
   transition: background-color 0.3s;
   font-family: "TT Barrels Trl2";
+  border-radius: 10%;
 }
 
-button:hover {
+.product-card:hover .wishList {
+  display: inline;
   background-color: #f05d4a;
+  color: #fff;
+  padding: 8px 8px;
+  border: #f05d4a;
+  cursor: pointer;
+  font-size: 10px;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+  font-family: "TT Barrels Trl2";
+  border-radius: 10%;
 }
 
 .pagination-container {

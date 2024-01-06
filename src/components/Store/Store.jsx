@@ -23,6 +23,16 @@ const Store = () => {
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
+  const [isCartOpen, setCartOpen] = useState(false);
+
+  const openCart = () => {
+    setCartOpen(true);
+  };
+
+  const closeCart = () => {
+    setCartOpen(false);
+  };
+
   return (
     <div>
       <StoreNav />
@@ -70,6 +80,7 @@ const Store = () => {
             &#8594;
           </button>
         </div>
+
       </div>
       <Footer />
     </div>

@@ -1,0 +1,93 @@
+.cart-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .cart-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .cart-header {
+    font-weight: bold;
+  }
+
+  .product button.delete-btn {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ffffff;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+
+  
+  .product {
+    display: flex;
+    align-items: center;
+  }
+  
+  .product img {
+    max-width: 50px;
+    margin-right: 10px;
+  }
+  
+  .quantity,
+  .price,
+  .subtotal {
+    text-align: center;
+  }
+  
+  /* Added styles for column names */
+  .product-name {
+    font-weight: bold;
+  }
+  
+  .cart-summary .total{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .total {
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  .checkout-btn-container {
+    text-align: center;
+    margin-top: 20px; /* Tăng khoảng cách giữa Total và nút Check Out */
+  }
+  
+  .checkout-btn {
+    padding: 20px; /* Tăng kích thước của nút Check Out */
+    width: 250px;
+    background-color: #f05d4a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #f05d4a;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  

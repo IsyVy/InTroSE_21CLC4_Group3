@@ -5,8 +5,27 @@
   margin-bottom: 20px;
 }
 
+@font-face {
+  font-family: "TT Barrels Trl3";
+  font-style: normal;
+  font-weight: 300;
+  src: local("TT Barrels Trl"),
+    url("https://fonts.cdnfonts.com/s/96459/TT Barrels Trial Regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "TT Barrels Trl2";
+  font-style: normal;
+  font-weight: 200;
+  src: local("TT Barrels Trl"),
+    url("https://fonts.cdnfonts.com/s/96459/TT Barrels Trial Regular.woff")
+      format("woff");
+}
+
 .store-header h2 {
   margin-left: 50px;
+  font-family: "TT Barrels Trl3";
 }
 .store-search-container {
   display: flex;
@@ -48,6 +67,7 @@ h2 {
 }
 /* ------------------------------------------------------------------- */
 .product-grid {
+  margin-top: 55px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start; /* Sắp xếp từ bên trái qua phải */
@@ -55,9 +75,9 @@ h2 {
 
 .product-card {
   width: calc(
-    33.33% - 20px
+    33.33% - 100px
   ); /* Chiều rộng của sản phẩm, giảm 20px để có khoảng cách giữa các sản phẩm */
-  margin: 10px;
+  margin-bottom: 35px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column; /* Chuyển sang layout dạng cột */
@@ -65,15 +85,17 @@ h2 {
 }
 
 .product-card img {
-  max-width: 100%;
-  max-height: 100px; /* Đặt kích thước tối đa theo chiều cao */
+  max-width: 60%;
+  max-height: 50px; /* Đặt kích thước tối đa theo chiều cao */
   height: auto;
 }
 
 .product-card h3 {
+  font-size: 12px;
   margin: 10px 0;
   color: #333;
   text-align: center; /* Căn giữa văn bản */
+  font-family: "TT Barrels Trl2";
 }
 
 .product-card p {
@@ -90,25 +112,24 @@ h2 {
 
 @media (max-width: 768px) {
   .product-card {
-    width: calc(50% - 20px); /* Hiển thị 2 sản phẩm trên mỗi hàng */
+    width: calc(50% - 30px); /* Hiển thị 2 sản phẩm trên mỗi hàng */
   }
 }
 
 @media (max-width: 480px) {
   .product-card {
-    width: calc(100% - 20px); /* Hiển thị 1 sản phẩm trên mỗi hàng */
+    width: calc(100% - 10px); /* Hiển thị 1 sản phẩm trên mỗi hàng */
   }
 }
 /* -------------------------------------------------------------------- */
 .button-container {
-  width: 50px; /* Đặt kích thước nút */
-  height: 50px; /* Đặt kích thước nút */
-  margin: 5px; /* Khoảng cách giữa nút Mua và nút trái tim */
+  width: 20px; /* Đặt kích thước nút */
+  height: 20px; /* Đặt kích thước nút */
+  margin: 15px; /* Khoảng cách giữa nút Mua và nút trái tim */
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 
 button {
   background-color: #f05d4a;
@@ -116,9 +137,10 @@ button {
   padding: 8px 16px;
   border: none;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 10px;
   margin: 0 5px;
   transition: background-color 0.3s;
+  font-family: "TT Barrels Trl2";
 }
 
 button:hover {
@@ -144,9 +166,11 @@ button:hover {
   padding: 8px 12px;
   border: none;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 10px;
   margin: 0 5px;
+  margin-top: 30px;
   transition: background-color 0.3s;
+  border-radius: 10%;
 }
 
 .pagination button:hover {
@@ -165,9 +189,10 @@ button:hover {
   padding: 8px 12px;
   border: none;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 10px;
   margin: 0 5px;
   transition: background-color 0.3s;
+  border-radius: 10%;
 }
 
 .navigation-buttons button:hover {

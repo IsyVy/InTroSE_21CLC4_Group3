@@ -43,12 +43,12 @@ const Nav = (props) => {
             <Link to="/login">
               {""}
               <span>
-                <FontAwesomeIcon icon={faUser} className="nav-icons" />
+                <FontAwesomeIcon icon={faUser} className="nav-login" />
               </span>
             </Link>
 
             <button className="search-wrapper" onClick={handleExpand}>
-              <SearchOutlined className="nav-icons" />
+              <SearchOutlined className="nav-search" />
             </button>
             <input
               className="search-input"

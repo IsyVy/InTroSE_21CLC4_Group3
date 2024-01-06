@@ -1,10 +1,22 @@
+@font-face {
+  font-family: "TT Barrels Trl2";
+  font-style: normal;
+  font-weight: 300;
+  src: local("TT Barrels Trl"),
+    url("https://fonts.cdnfonts.com/s/96459/TT Barrels Trial Regular.woff")
+      format("woff");
+}
+
 body {
   margin: 0;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "TT Barrels Trl2", serif;
 }
 
 .topnav img {
-  margin-top: 15px;
+  margin-top: 20px;
+  width: 160px;
+  height: 46px;
+  margin-left: 100px;
 }
 
 .topnav {
@@ -20,10 +32,10 @@ body {
   float: left;
   color: #231e1e;
   text-align: center;
-  padding: 14px 30px;
+  padding: 18px 20px;
   text-decoration: none;
-  font-size: 16px;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+  font-family: "TT Barrels Trl2";
 }
 
 .topnav a:hover {
@@ -70,17 +82,28 @@ body {
   cursor: pointer;
   margin-top: 24px;
   margin-left: 1030px;
-  font-size: 22px;
+  font-size: 25px;
 }
 
-.topnav .nav-icons {
+.topnav .nav-search {
   justify-content: left;
   width: 1.3rem;
   height: 1.3rem;
+  display: inline-block;
+  font-size: 17px;
+  color: "#f05d4a";
+  margin-left: 60px;
+}
+
+.topnav .nav-login {
+  justify-content: left;
+  width: 1rem;
+  height: 1rem;
   margin-left: 2rem;
   display: inline-block;
-  font-size: 23px;
   color: "#f05d4a";
+  margin-left: 50px;
+  margin-top: 20px;
 }
 
 .topnav .nav-iconsS {
@@ -88,8 +111,8 @@ body {
   right: 0;
   width: 3rem;
   height: 3rem;
-  margin-left: -2rem;
+  margin-left: 0.5rem;
   display: inline-block;
-  font-size: 23px;
+  font-size: 17px;
   color: "#f05d4a";
 }

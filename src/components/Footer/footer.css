@@ -32,25 +32,26 @@
 }
 .column1 {
   font-family: "TT Barrels Trl4";
-  margin-top: -90px;
+  margin-top: -150px;
   margin-right: 400px;
   text-align: justify;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .column1 p {
   font-family: "TT Barrels Trl4";
   margin-top: 15px;
   text-align: justify;
-  font-size: 16px;
+  font-size: 12px;
   max-width: 250px;
 }
 
 .column2 {
   font-family: "TT Barrels Trl4";
   margin-left: -200px;
-  margin-top: 0px;
+  margin-top: -20px;
   text-align: left;
+  font-size: 12px;
 }
 
 .column2 ul {
@@ -64,8 +65,9 @@
 .column3 {
   font-family: "TT Barrels Trl4";
   margin-left: 200px;
-  margin-top: -30px;
+  margin-top: -50px;
   text-align: left;
+  font-size: 12px;
 }
 
 .column3 ul {

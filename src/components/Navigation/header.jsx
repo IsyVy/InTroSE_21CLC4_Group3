@@ -22,7 +22,7 @@ function headNav() {
               <Routes>
                 <Route path="/" element={<Nav />}>
                   <Route index element={<DashBoard />} />
-                  <Route path="store" element={<Login />} />
+                  <Route path="store" element={<Store />} />
                   <Route path="login" element={<Login />}>
                     <Route path="contact" />
                   </Route>

@@ -1,35 +1,44 @@
-import React from "react";
-import product_cart from "../../ProductList/productList";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHandPointer } from "@fortawesome/free-regular-svg-icons";
-import { ShoppingCartOutlined } from "@ant-design/icons";
+import React, { useState, useEffect } from "react";
+import productList from "../../ProductList/productList"; // Assuming this is correct
 
 const BestList = () => {
-  console.log(product_cart);
-  const listItems = product_cart.map((item, index) => (
-    <div className="card" key={item.id}>
-      <div className="card_img">
-        <img src={item.thumb} />
-      </div>
-      <div className="card_header">
-        <h2>{item.product_name}</h2>
-        <p>{item.description}</p>
-        <p className="price">
-          {item.price}
-          <span>{item.currency}</span>
-        </p>
-        <div className="btn">
-          <button className="btnHand">
-            <FontAwesomeIcon icon={faHandPointer} />
-          </button>
-          <button className="btnCard">
-            <ShoppingCartOutlined />
-          </button>
+  const [productCart, setProductCart] = useState([]); // Renamed state variables
+
+  const fetchProduct = async () => {
+    const response = await fetch("http://localhost:4000/api/product", {
+      method: "GET",
+    });
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data.products);
+      setProductCart(data.products); // Use correct setter function
+    }
+  };
+
+  useEffect(() => {
+    fetchProduct();
+  }, []);
+
+  return (
+    <div className="main_content">
+      {productCart.map((item) => (
+        <div className="card" key={item.id}>
+          <div className="card_img">
+            <img src={item.image} alt={item.name} />
+          </div>
+          <div className="card_header">
+            <h2>{item.name}</h2>
+            <p style={{ color: "black" }}>{item.description}</p>
+            <p className="price">
+              {item.price}
+              <span>$</span>
+            </p>
+            <div className="btn">Add to cart</div>
+          </div>
         </div>
-      </div>
+      ))}
     </div>
-  ));
-  return <div className="main_content">{listItems}</div>;
+  );
 };
 
 export default BestList;

@@ -19,12 +19,12 @@ const BestList = () => {
           <span>{item.currency}</span>
         </p>
         <div className="btn">
-          <div className="btnHand">
+          <button className="btnHand">
             <FontAwesomeIcon icon={faHandPointer} />
-          </div>
-          <div className="btnCard">
+          </button>
+          <button className="btnCard">
             <ShoppingCartOutlined />
-          </div>
+          </button>
         </div>
       </div>
     </div>

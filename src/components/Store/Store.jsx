@@ -9,7 +9,7 @@ const products = [
   // ...productCart,
 ];
 
-const itemsPerPage = 6; // Số sản phẩm hiển thị trên mỗi trang
+const itemsPerPage = 8; // Số sản phẩm hiển thị trên mỗi trang
 
 const Store = () => {
   const [currentPage, setCurrentPage] = useState(1);

@@ -22,9 +22,7 @@ const Login = (props) => {
     // and use them for authentication
   };
 
-  const products = [
-    ...productCart,
-  ];
+  const products = [...productCart];
 
   const [currentProductIndex, setCurrentProductIndex] = useState(0);
 
@@ -53,7 +51,7 @@ const Login = (props) => {
             <input
               id="username"
               type="text"
-              placeholder="Enter your username or email"
+              //placeholder="Enter your username or email"
             />
           </div>
           <div>
@@ -61,7 +59,7 @@ const Login = (props) => {
             <input
               id="password"
               type="password"
-              placeholder="Enter your password"
+              //placeholder="Enter your password"
             />
           </div>
           <div className="login-options">

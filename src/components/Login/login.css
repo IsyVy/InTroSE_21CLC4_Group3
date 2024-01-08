@@ -1,7 +1,7 @@
 /* Login.css */
 .container {
   height: 100%;
-
+  margin-left: 100px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start; /* Căn trên cùng theo chiều dọc */
@@ -29,29 +29,56 @@
   padding: 20px;
 }
 
+@font-face {
+  font-family: "TT Barrels Trl3";
+  font-style: normal;
+  font-weight: 250;
+  src: local("TT Barrels Trl"),
+    url("https://fonts.cdnfonts.com/s/96459/TT Barrels Trial Regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "TT Barrels Trl1";
+  font-style: normal;
+  font-weight: 150;
+  src: local("TT Barrels Trl"),
+    url("https://fonts.cdnfonts.com/s/96459/TT Barrels Trial Regular.woff")
+      format("woff");
+}
+
 .account-section {
   margin-top: 20px;
   /* Add styling for the account section */
 }
 
 .account-section h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-left: -10px;
+  font-family: "TT Barrels Trl3";
 }
 
 .account-section div {
   margin-bottom: 15px;
+  font-family: "TT Barrels Trl3";
 }
 
 .account-section label {
   display: block;
   margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: 13px;
+  font-family: "TT Barrels Trl1";
 }
 
 .account-section input {
-  width: 20%; /* Make the input fields full-width */
+  width: 45%; /* Make the input fields full-width */
   padding: 8px; /* Add padding to the input fields */
   box-sizing: border-box; /* Include padding and border in the total width/height */
+  outline: transparent;
+  border: transparent;
+  background-color: #f5f3f3;
 }
 
 .login-options {
@@ -67,10 +94,11 @@
   border: none;
   border-radius: 4px; /* Rounded corners */
   width: 10%; /* Make the button full-width */
+  font-family: "TT Barrels Trl3";
 }
 
 .remember-me {
-  margin-top: 10px;
+  margin-top: 15px;
   display: flex;
   align-items: center;
   white-space: nowrap; /* Prevent text from wrapping */
@@ -97,6 +125,16 @@
   padding: 20px;
 }
 
+.product-section h2 {
+  margin-left: -10px;
+  font-family: "TT Barrels Trl3";
+}
+
+.product-display {
+  font-size: 13px;
+  font-family: "TT Barrels Trl1";
+}
+
 .product-navigation {
   display: flex;
   align-items: center; /* Căn giữa theo chiều dọc */
@@ -113,7 +151,7 @@
   margin-right: 2px; /* Khoảng cách giữa nút mũi tên */
 }
 
-.product-section .product-image img{
+.product-section .product-image img {
   max-width: 100%;
   max-height: 100px; /* Đặt kích thước tối đa theo chiều cao */
   height: auto;

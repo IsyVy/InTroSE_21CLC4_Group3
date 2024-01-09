@@ -9,6 +9,7 @@ import Nav from "../Navigation/Nav";
 import logo from "../../images/shoes-logo.webp";
 import Store from "../Store/Store";
 import Cart from "../CartDetail/cartManage";
+import Favorite from "../Favorite/Favorite";
 
 const { Header, Content, Sider, Footer } = Layout;
 
@@ -25,7 +26,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route index element={<DashBoard />} />
         <Route path="store" element={<Store />} />
         <Route path="login" element={<Login />} />
-        <Route path="contact" />
+        <Route path="Favorite" element={<Favorite />} />
         <Route path="cart" element={<Cart />} />
 
         <Route path="*" element={<NotFound />} />

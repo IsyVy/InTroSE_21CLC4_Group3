@@ -9,6 +9,7 @@ import ReactDOM from "react-dom/client";
 import Nav from "./Nav";
 import NotFound from "../../routes/NotFound";
 import Store from "../Store/Store";
+import Favorite from "../Favorite/Favorite.jsx";
 const { Header, Content, Sider, Footer } = Layout;
 
 function headNav() {
@@ -24,7 +25,7 @@ function headNav() {
                   <Route index element={<DashBoard />} />
                   <Route path="store" element={<Store />} />
                   <Route path="login" element={<Login />}>
-                    <Route path="contact" />
+                    <Route path="favorite" element={<Favorite />} />
                   </Route>
                   <Route path="*" element={<NotFound />} />
                 </Route>

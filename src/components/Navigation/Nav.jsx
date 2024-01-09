@@ -28,8 +28,8 @@ const Nav = (props) => {
               {""}
               <div>STORE </div>
             </Link>
-            <Link to="/contact">
-              <div>CONTACT </div>
+            <Link to="/favorite">
+              <div>FAVORITE </div>
             </Link>
             <Link to="/about">
               <div>ABOUT</div>

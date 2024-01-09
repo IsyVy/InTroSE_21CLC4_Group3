@@ -120,7 +120,7 @@ const Login = (props) => {
         </div>
         {/* --------------------------------------------------------- */}
         <div className="product-section">
-          <h2>Featured Products</h2>
+          <h2>On sale</h2>
           <div className="product-display">
             <div className="product-image">
               <img

@@ -102,7 +102,7 @@ const Store = () => {
       <div className="store-header">
         <h2>Store</h2>
         <div className="store-search-container">
-          <input type="text" placeholder="Tìm kiếm..." />
+          <input type="text" placeholder="Search..." />
           <button type="button">search</button>
         </div>
       </div>

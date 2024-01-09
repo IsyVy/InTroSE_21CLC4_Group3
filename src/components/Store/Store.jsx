@@ -67,7 +67,7 @@ const products = [
   },
 ];
 
-const itemsPerPage = 6; // Số sản phẩm hiển thị trên mỗi trang
+const itemsPerPage = 8; // Số sản phẩm hiển thị trên mỗi trang
 
 const Store = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -103,7 +103,7 @@ const Store = () => {
         <h2>Store</h2>
         <div className="store-search-container">
           <input type="text" placeholder="Tìm kiếm..." />
-          <button type="button">Tìm kiếm</button>
+          <button type="button">search</button>
         </div>
       </div>
       <div className="product-grid">
@@ -111,10 +111,10 @@ const Store = () => {
           <div key={product._id} className="product-card">
             <img src={product.image} alt={product.name} />
             <h3>{product.name}</h3>
-            <p>Giá: ${product.price}</p>
+            <p>Price: {product.price}d</p>
             <div className="button-container">
-              <button>Mua</button>
-              <button>Yêu thích</button>
+              <button>Buy</button>
+              <button>♡</button>
             </div>
           </div>
         ))}
